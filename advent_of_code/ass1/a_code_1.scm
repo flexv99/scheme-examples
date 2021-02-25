@@ -3,7 +3,7 @@
 ;; required calculation
 (define (required-fuel mass)
   (- (floor (/ mass 3)) 2))
-   
+
 (define rocket-mass
   (lambda (file-name)
   (let ((source (open-input-file file-name)))
