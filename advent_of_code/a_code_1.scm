@@ -1,5 +1,9 @@
 (use-modules (ice-9 rdelim))
 
-(define (read-line filename)
-  (let ((port (open-input-file filename)))
-    (display (read-line port)) (newline) (close-port port)))
+;; required calculation
+(define (required-fuel mass)
+  (- (floor (/ mass 3)) 2))
+
+
+;; provided data that needs to be calculated
+(define filepath "/home/flex/personal/04_programming/scheme-examples/advent_of_code/a_code_data/input_data_ass1.txt")
