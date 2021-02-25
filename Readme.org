@@ -1,1 +1,1 @@
-* My jpurney in learning Scheme
+* My journey in learning Scheme
