@@ -14,12 +14,9 @@
            (close-input-port source)
            sum-so-far)
           ((number? nextval)
-           (kernel (+ (rocket-eqn nextval) sum-so-far)))
+           (kernel (+ (required-fuel nextval) sum-so-far)))
           (else
            (kernel sum-so-far))))))))
 
-;; TODO load from file (filepath)(define data)
-(define (apply_on_data lst)
-  (map (lambda (x)(required-fuel x)) lst))
 
 
